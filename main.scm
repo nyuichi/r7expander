@@ -14,7 +14,7 @@
 	(scheme cxr)
 	(srfi 1))
 
-(include "pp.scm")
+(include "extlib/pp.scm")
 
 (define (file->list filename)
   (call-with-input-file filename

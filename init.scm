@@ -522,46 +522,13 @@
 		;; (scheme read)
 		read
 		;; (scheme write)
-		write write-simple write-shared display
-		;; (srfi 1)
-		xcons list-tabulate cons*
-		proper-list? circular-list? dotted-list? not-pair? null-list? list=
-		circular-list length+
-		iota
-		first second third fourth fifth sixth seventh eighth ninth tenth
-		car+cdr
-		take drop
-		take-right drop-right
-		take! drop-right!
-		split-at split-at!
-		last last-pair
-		zip unzip1 unzip2 unzip3 unzip4 unzip5
-		count
-		append! append-reverse append-reverse! concatenate concatenate!
-		unfold fold pair-fold reduce
-		unfold-right fold-right pair-fold-right reduce-right
-		append-map append-map! map! pair-for-each filter-map map-in-order
-		filter partition remove
-		filter! partition! remove!
-		find find-tail any every list-index
-		take-while drop-while take-while!
-		span break span! break!
-		delete delete!
-		alist-cons alist-copy
-		delete-duplicates delete-duplicates!
-		alist-delete alist-delete!
-		reverse!
-		lset<= lset= lset-adjoin
-		lset-union lset-intersection lset-difference lset-xor lset-diff+intersection
-		lset-union! lset-intersection! lset-difference! lset-xor! lset-diff+intersection!))))
+		write write-simple write-shared display))))
 
-(load-library-from-file "scmlib/scheme/base.sld")
+(load-library-from-file "init/scheme/base.sld")
 (set! feature-list (cons 'r7rs feature-list))
-(load-library-from-file "scmlib/scheme/case-lambda.sld")
-(load-library-from-file "scmlib/scheme/cxr.sld")
-(load-library-from-file "scmlib/scheme/file.sld")
-(load-library-from-file "scmlib/scheme/process-context.sld")
-(load-library-from-file "scmlib/scheme/r5rs.sld")
-(load-library-from-file "scmlib/scheme/read.sld")
-(load-library-from-file "scmlib/scheme/write.sld")
-(load-library-from-file "scmlib/srfi/1.sld")
+(load-library-from-file "init/scheme/case-lambda.sld")
+(load-library-from-file "init/scheme/cxr.sld")
+(load-library-from-file "init/scheme/file.sld")
+(load-library-from-file "init/scheme/process-context.sld")
+(load-library-from-file "init/scheme/read.sld")
+(load-library-from-file "init/scheme/write.sld")
