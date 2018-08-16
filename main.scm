@@ -14,8 +14,6 @@
 	(scheme cxr)
 	(srfi 1))
 
-(include "init.scm")
-
 (include "pp.scm")
 
 (define (file->list filename)
@@ -38,6 +36,8 @@
 (define (load-program-from-file filename)
   (let ((forms (file->list filename)))
     (expand-program forms)))
+
+(include "init.scm")
 
 (define repl-environment
   (make-toplevel-environment

@@ -49,3 +49,9 @@ together with
 
 Internal definitions are not translated into letrec* because outputs can have internal define-record-type, which we don't know how to expand into internal (ordinary) definitions.
 
+# Implementation notes
+
+Non-standard built-in libraries listed below:
+
+- `(r7expander builtin)` exports basic keywords such as `define` and `lambda`.
+- `(r7expander native)` exports all native procedures available.
