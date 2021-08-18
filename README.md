@@ -11,6 +11,7 @@
 ```
 
 ```shell
+$ make
 $ ./r7expander.scm -l test.sld
 (begin
   (define foo.bar:x 1)
