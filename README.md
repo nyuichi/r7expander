@@ -55,3 +55,16 @@ Non-standard built-in libraries listed below:
 
 - `(r7expander builtin)` exports basic keywords such as `define` and `lambda`.
 - `(r7expander native)` exports all native procedures available.
+
+#### License
+
+<sup>
+Licensed under <a href="LICENSE-MIT">MIT license</a>.
+</sup>
+
+<br>
+
+<sub>
+Unless you explicitly state otherwise, any contribution intentionally submitted
+for inclusion in r7expander by you shall be licensed as above, without any additional terms or conditions.
+</sub>
